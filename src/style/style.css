@@ -1,28 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+body {
     background-color: #131122;
     color: #fff;
     font-family: 'poppins', 'sans-serif';
     height: auto;
 }
 
-#apresentacao-container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+
+    #apresentacao-container {
+        width: calc(100vw - 15px);
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 0 auto;
+    }
+
+    #apresentacao-container h1 {
+        margin: 0 auto;
+        font-size: 22px;
+    }
+
+    #apresentacao-container p {
+        margin: 0 auto;
+        letter-spacing: 0.5rem;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #apresentacao-container #social-medias {
+        width: 80%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #apresentacao-container #social-medias a {
+        color: #fff;
+        background-color: transparent;
+        overflow: hidden;
+    }
 }
 
-#apresentacao-container h1{
-    margin: 0 auto;
-}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
-#apresentacao-container p{
-    margin: 0 auto;
-    letter-spacing: 0.5rem;
-    text-align: center;
+    #apresentacao-container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    #apresentacao-container h1 {
+        margin: 0 auto;
+    }
+
+    #apresentacao-container p {
+        margin: 0 auto;
+        letter-spacing: 0.5rem;
+        text-align: center;
+    }
+
+    #apresentacao-container #social-medias {
+        width: 50%;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    #apresentacao-container #social-medias a {
+        color: #fff;
+        background-color: transparent;
+        overflow: hidden;
+    }
 }
